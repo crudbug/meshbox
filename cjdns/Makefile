@@ -83,10 +83,6 @@ define Package/cjdns/install
 		$(1)/etc/uci-defaults/cjdns
 
 	$(CP) \
-		$(PKG_BUILD_DIR)/contrib/lua/cjdns/* \
-		$(1)/usr/lib/lua/cjdns
-
-	$(CP) \
 		./lua/cjdns/* \
 		$(1)/usr/lib/lua/cjdns
 endef
